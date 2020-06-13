@@ -122,16 +122,10 @@ img {
 
 .card:hover {
   border-color: rgb(148, 148, 148);
-  background-color: rgb(0, 0, 0);
 }
 
 .image {
   border: black 2px solid;
-}
-
-/*Background*/
-.background {
-  background-image: url("https://st2.depositphotos.com/2453337/6353/i/950/depositphotos_63532309-stock-photo-white-canvas-background-texture-with.jpg");
 }
 
 /*Names*/
