@@ -38,15 +38,17 @@ const User = ({ match }) => {
       <Link to='/' className='btn btn-light'>
         Back to Search
       </Link>
+      <div className='hire'>
       Hirable: {' '}
       {hirable ? (
         <i className='fas fa-check text-success' />
       ) : (
         <i className='fas fa-times-circle text-danger' />
       )}
+      </div>
       <div className="card grid-2">
           <div className="all-centre">
-              <img src={avatar_url} className='round-img' alt='' style={{ width: '150px'}}/>
+              <img src={avatar_url} className='round-img image' alt='' style={{ width: '150px'}}/>
               <h1>{name}</h1>
               <p>Location: {location}</p>
           </div>
@@ -83,8 +85,8 @@ const User = ({ match }) => {
       <div className="card text-centre">
           <div className="badge badge-primary">Followers: {followers}</div>
           <div className="badge badge-success">Following: {following}</div>
-          <div className="badge badge-light">Public Repos: {public_repos}</div>
-          <div className="badge badge-dark">Public Gists: {public_gists}</div>
+          <div className="badge badge-dark">Public Repos: {public_repos}</div>
+          <div className="badge badge-light">Public Gists: {public_gists}</div>
       </div>
       <Repos repos={repos} />
     </Fragment>

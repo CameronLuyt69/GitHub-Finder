@@ -8,13 +8,14 @@ const UserItem = ({user: {login,avatar_url,html_url}}) => {
             <img
             src={avatar_url}
             alt=''
-            className='round-img '
+            className='round-img image'
             style={{ width: '80px'}}
             />
 
-            <div>
+            
             <h2>{login}</h2>
-            </div>
+           
+
             <div>
                 <Link to={`/user/${login}`} className='btn btn-dark btn-sm my-1'>
                     More
